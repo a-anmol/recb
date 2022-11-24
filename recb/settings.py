@@ -75,14 +75,14 @@ WSGI_APPLICATION = 'recb.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'recb',
-        'USER':'postgresql',
-        'PASSWORD':'12345678',
-        'HOST':'localhost'
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': 'recb',
+    #     'USER':'postgresql',
+    #     'PASSWORD':'12345678',
+    #     'HOST':'localhost'
 
-    }
+    # }
 }
 
 
