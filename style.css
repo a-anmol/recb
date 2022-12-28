@@ -31,18 +31,18 @@ body {
 
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     background-color: rgb(255, 212, 212);
     width: 14px;
 }
 
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
     background-color: none;
     border: 4px solid var(--baseColor);
     border-radius: 10px;
 }
 
-body::-webkit-scrollbar-thumb:hover{
+body::-webkit-scrollbar-thumb:hover {
     background-color: rgb(255, 188, 188);
 }
 
@@ -602,12 +602,12 @@ body::-webkit-scrollbar-thumb:hover{
 
 }
 
-.navLogo{
+.navLogo {
     width: 0px;
     height: 0px;
 }
 
-.navLogoScroll{
+.navLogoScroll {
     width: 60px;
     height: 60px;
     overflow: hidden;
@@ -620,7 +620,7 @@ body::-webkit-scrollbar-thumb:hover{
     transition: all 0.08s;
 }
 
-.navLogoImg{
+.navLogoImg {
     width: 100%;
     height: 100%;
 }
@@ -778,8 +778,8 @@ body::-webkit-scrollbar-thumb:hover{
 
 .logoBar .aktuLogo {
     /* flex: 1; */
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+    /* border-bottom-left-radius: 10px; */
+    /* border-top-left-radius: 10px; */
 }
 
 
@@ -1226,7 +1226,7 @@ body::-webkit-scrollbar-thumb:hover{
     background-color: white;
     transition: 1.2s cubic-bezier(0.19, 1, 0.22, 1);
     color: black;
-    animation: button .5s linear 1;
+    animation: button .4s linear 1;
 }
 
 
@@ -1236,11 +1236,11 @@ body::-webkit-scrollbar-thumb:hover{
     }
 
     25% {
-        transform: rotate(4deg);
+        transform: rotate(3deg);
     }
 
     75% {
-        transform: rotate(-4deg);
+        transform: rotate(-3deg);
     }
 
     100% {
@@ -1617,19 +1617,19 @@ body::-webkit-scrollbar-thumb:hover{
 
 
 /* ************************************** notice section *************************** */
-.noticeOuter{
+.noticeOuter {
     width: calc(50% - 10px);
     display: inline-block;
     margin: auto;
 }
 
-.noticeInner{
+.noticeInner {
     width: 90%;
     margin: auto;
     overflow: hidden;
 }
 
-.noticeText{
+.noticeText {
     /* background-color: #00ccff; */
     border-left: 6px solid var(--baseColor);
     padding-left: 6px;
@@ -1637,7 +1637,7 @@ body::-webkit-scrollbar-thumb:hover{
     position: relative;
 }
 
-.noticeText::after{
+.noticeText::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -1647,12 +1647,14 @@ body::-webkit-scrollbar-thumb:hover{
     transform: translateY(50%);
 
 }
-.noticeTextInner{
+
+.noticeTextInner {
     background-color: white;
     display: inline-block;
     padding-right: 10px;
 }
-.noticeHeading{
+
+.noticeHeading {
     color: var(--baseColor);
     text-transform: capitalize;
     font-weight: bold;
@@ -1665,13 +1667,14 @@ body::-webkit-scrollbar-thumb:hover{
     /* font-family: 'Poppins'; */
 }
 
-.noticeCaption{
+.noticeCaption {
     font-size: 12px;
     color: rgb(27, 27, 27);
     font-weight: bold;
     /* font-family: 'Roboto'; */
 }
-.noticeArea{
+
+.noticeArea {
     /* float: left; */
     padding: 10px;
     /* display: flex; */
@@ -1679,52 +1682,59 @@ body::-webkit-scrollbar-thumb:hover{
     overflow-x: auto;
     overflow-x: scroll;
 }
-.noticeScroll{
+
+.noticeScroll {
     display: flex;
     float: left;
 }
 
-.noticeArea::-webkit-scrollbar{
+.noticeArea::-webkit-scrollbar {
     background-color: rgb(255, 234, 234);
     border-radius: 10px;
     height: 14px;
 }
 
-.noticeArea::-webkit-scrollbar-thumb{
+.noticeArea::-webkit-scrollbar-thumb {
     background-color: none;
     border: 3px solid var(--baseColor);
     border-radius: 10px;
 }
 
-.noticeArea::-webkit-scrollbar-thumb:hover{
+.noticeArea::-webkit-scrollbar-thumb:hover {
     background-color: rgb(255, 238, 238);
 }
-.noticeItem{
+
+.noticeItem {
     width: 360px;
     /* height: 320px; */
     padding: 20px;
     display: flex;
 }
 
-.noticeItem:hover{
+.noticeItem:hover {
     background-color: rgb(255, 246, 246);
     border-radius: 20px;
 }
-.noticeItem:hover .notice a{
+
+.noticeItem:hover .notice a {
     color: var(--baseColor);
 }
-.noticeItem:hover .noticeDay{
+
+.noticeItem:hover .noticeDay {
     color: rgb(58, 58, 58);
 }
-.noticeItem:hover .noticeMonth{
+
+.noticeItem:hover .noticeMonth {
     color: var(--baseColor);
 }
-.noticeDate{
+
+.noticeDate {
     padding-right: 4px;
     margin-right: 10px;
     border-right: 1px solid var(--baseColor);
 }
-.noticeDay{
+
+.noticeDay {
     font-size: 36px;
     color: var(--baseColor);
     font-weight: bold;
@@ -1732,11 +1742,12 @@ body::-webkit-scrollbar-thumb:hover{
     left: -4px;
 }
 
-.noticeMonth{
+.noticeMonth {
     font-weight: bold;
     color: rgb(58, 58, 58);
 }
-.notice a{
+
+.notice a {
     color: rgb(58, 58, 58);
 }
 
@@ -1820,34 +1831,39 @@ body::-webkit-scrollbar-thumb:hover{
     border-bottom: 3px solid var(--baseColor);
     /* background-image: url(assets/images/Rajkiya-Engineering-College-bijnor.jpg); */
     /* background-size: cover; */
-    background: linear-gradient(135deg, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
     box-shadow: 0 0 1px rgb(41, 41, 41);
 }
+
 .MenuBarInfoItem:hover {
     /* content: ''; */
     /* position: absolute; */
     /* width: 40px; */
     /* z-index: 2000; */
     /* height: 140px; */
-    border-color: linear-gradient(#00ccff), #d400d4!important;
+    border-color: linear-gradient(#00ccff), #d400d4 !important;
     animation: animate .4s linear 1;
     box-shadow: 0.6px 0.6px 2px white;
-    background: linear-gradient(135deg, #ffffff 0%,rgb(255, 227, 227) 50%,var(--baseColor) 51%,#f6f6f6 100%);
-    
+    background: linear-gradient(135deg, #ffffff 0%, rgb(255, 227, 227) 50%, var(--baseColor) 51%, #f6f6f6 100%);
+
 }
-.MenuBarInfoItemSvg{
+
+.MenuBarInfoItemSvg {
     width: 100%;
 }
-.MenuBarInfoItemSvg img{
+
+.MenuBarInfoItemSvg img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
-.MenuBarInfoItemSvg svg{
+
+.MenuBarInfoItemSvg svg {
     width: 40px;
     height: 40px;
     color: var(--baseColor);
 }
+
 .MenuBarInfoItemText {
     /* height: 100%; */
     width: 100%;
@@ -1860,14 +1876,17 @@ body::-webkit-scrollbar-thumb:hover{
     /* position: relative; */
     /* bottom: 6px; */
 }
-.sometag1{
+
+.sometag1 {
     border: 1px solid var(--baseColor);
 }
-.sometag1 .MenuBarInfoItemSvg{
+
+.sometag1 .MenuBarInfoItemSvg {
     position: relative;
     bottom: 6px;
 }
-.sometag1 .MenuBarInfoItemText{
+
+.sometag1 .MenuBarInfoItemText {
     background-color: var(--baseColor);
     color: white;
     position: absolute;
@@ -1877,12 +1896,13 @@ body::-webkit-scrollbar-thumb:hover{
     padding: 2px 0px 1px 0px;
 
 }
-.sometag2{
+
+.sometag2 {
     border: 1px solid var(--baseColor);
     border-bottom: 3px solid var(--baseColor);
 }
 
-.sometag3{
+.sometag3 {
     border: 1px solid var(--baseColor);
 }
 
@@ -1987,26 +2007,27 @@ body::-webkit-scrollbar-thumb:hover{
 
 
 /****************************************** faqs *********************************************/
-.faqs{
+.faqs {
     width: 40%;
     margin-left: 20px;
 }
 
-.questionArea{
+.questionArea {
     width: 100%;
     position: relative;
 }
-.questionInner{
+
+.questionInner {
     width: 90%;
     float: right;
 }
 
-.questionItem{
+.questionItem {
     position: relative;
     padding-bottom: 4px;
 }
 
-.questionSvg svg{
+.questionSvg svg {
     width: 30px;
     height: 30px;
     color: var(--baseColor);
@@ -2016,12 +2037,13 @@ body::-webkit-scrollbar-thumb:hover{
     transform: rotate(180deg);
 }
 
-.question{
+.question {
     padding: 10px 0;
     font-weight: bold;
     color: rgb(41, 41, 41);
 }
-.questionAns{
+
+.questionAns {
     /* color: rgb(41, 41, 41); */
     height: 0;
     overflow: hidden;
@@ -2029,49 +2051,51 @@ body::-webkit-scrollbar-thumb:hover{
     padding-top: 4px;
 }
 
-.questionItem:hover .questionAns{
+.questionItem:hover .questionAns {
     height: 100%;
     padding-top: 0;
     padding-bottom: 10px;
     transition: all .4s ease-in-out;
 }
 
-.questionItem:hover svg{
+.questionItem:hover svg {
     transform: none;
     transition: all .4s ease-in-out;
 }
 
-.word{
+.word {
     width: 100%;
     padding: 20px 0;
 }
 
-.coglry{
+.coglry {
     width: calc(60% - 30px);
+    max-height: 440px;
     position: absolute;
     top: 0;
 }
 
-.lwBr{
+.lwBr {
     position: relative;
     padding-bottom: auto;
     margin-bottom: auto;
     margin-top: 20px;
+    min-height: 449px;
 }
 
-.wordText{
+.wordText {
     color: var(--baseColor);
     font-weight: bold;
     font-size: 20px;
     margin: 10px 0;
 }
 
-.wordMng{
+.wordMng {
     color: rgb(33, 35, 49);
     margin-bottom: 8px;
 }
 
-.wordUs{
+.wordUs {
     font-size: 14px;
 }
 
@@ -2096,7 +2120,7 @@ body::-webkit-scrollbar-thumb:hover{
     top: 0;
     -webkit-font-smoothing: antialiased;
     box-shadow: 2px 2px 10px black;
-    background-color:  rgb(33, 35, 49) !important;
+    background-color: rgb(33, 35, 49) !important;
     margin-top: 0;
     /* z-index: 1080; */
 }
@@ -2115,7 +2139,7 @@ body::-webkit-scrollbar-thumb:hover{
     display: flex;
 }
 
-.fppterBarContent{
+.fppterBarContent {
     display: flex;
 }
 
@@ -2135,7 +2159,7 @@ body::-webkit-scrollbar-thumb:hover{
     /* box-shadow: 2px 2px 10px black; */
 }
 
-.footerBarInfo:last-child{
+.footerBarInfo:last-child {
     border-right: none;
 }
 
@@ -2151,11 +2175,11 @@ body::-webkit-scrollbar-thumb:hover{
     /* text-shadow: 0px 1px 2px #ccdbae; */
 }
 
-.footerBarInfoHeading::after{
+.footerBarInfoHeading::after {
     position: absolute;
     content: '';
-    width: 
-    40%;
+    width:
+        40%;
     height: 2px;
     background-color: var(--baseColor);
     bottom: -10px;
@@ -2174,14 +2198,15 @@ body::-webkit-scrollbar-thumb:hover{
     color: #c5c5c5;
 }
 
-.footerBarAddress a{
+.footerBarAddress a {
     color: #c5c5c5;
 }
-.footerBarAddress a:hover{
+
+.footerBarAddress a:hover {
     color: var(--baseColor);
 }
 
-.footerLogo{
+.footerLogo {
     margin: auto;
     width: 70px;
     height: 70px;
@@ -2189,7 +2214,8 @@ body::-webkit-scrollbar-thumb:hover{
     border-radius: 20px;
     margin-bottom: 10px;
 }
-.footerLogo img{
+
+.footerLogo img {
     width: 100%;
     height: 100%;
 }
@@ -2211,7 +2237,8 @@ body::-webkit-scrollbar-thumb:hover{
     position: relative;
     left: 10px;
     font-size: 14px;
-    font-family: 'Roboto';padding: 14px 0;
+    font-family: 'Roboto';
+    padding: 14px 0;
     border-bottom: 2px dotted #333;
     /* letter-spacing: 0.5px; */
     /* font-weight: 600; */
@@ -2249,12 +2276,12 @@ body::-webkit-scrollbar-thumb:hover{
     color: var(--baseColor);
 }
 
-.footerBarInfoItem:hover.footerBarInfoItem::before{
+.footerBarInfoItem:hover.footerBarInfoItem::before {
     width: 10px;
     background-color: rgb(255, 188, 188);
 }
 
-.credits{
+.credits {
     /* height: 40px; */
     /* text-align: right; */
     color: #c5c5c5;
@@ -2382,10 +2409,10 @@ body::-webkit-scrollbar-thumb:hover{
 }
 */
 
-.socialIconWraper .socialIcon:hover span{
+.socialIconWraper .socialIcon:hover span {
     background-color: var(--baseColor);
     color: white;
-} 
+}
 
 
 
@@ -2487,10 +2514,12 @@ body::-webkit-scrollbar-thumb:hover{
 .bottom-img {
     filter: grayscale(1);
 }
+
 .img-fluid {
     width: 100%;
     height: auto;
 }
+
 .color {
     filter: none;
     transition: all 1s ease-in-out;
@@ -2521,23 +2550,26 @@ body::-webkit-scrollbar-thumb:hover{
 
 
 
-ul{
+ul {
     list-style: none outside none;
     padding-left: 0;
     margin: 0;
 }
-.demo .item{
+
+.demo .item {
     margin-bottom: 60px;
 }
-.demo li{
+
+.demo li {
     /* background-color: #ed3020; */
     text-align: center;
     color: #FFF;
     display: block;
     float: left;
     margin-right: 6px;
-    cursor:pointer;
+    cursor: pointer;
 }
+
 .content-slider h3 {
     margin: 0;
     padding: 70px 0;
@@ -2546,5 +2578,8 @@ ul{
 .demo img {
     display: block;
     height: auto;
-    max-width: 100%;
+    width: 100%;
+    max-height: 320px;
+    margin: auto;
+    border-radius: 10px;
 }

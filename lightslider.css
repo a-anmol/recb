@@ -136,13 +136,14 @@
     transition: border-radius 0.12s linear 0s 0.35s linear 0s;
 }
 .lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {
-    border-radius: 2px;
+    /* border-radius: 2px; */
     border: 2px solid var(--baseColor);
 }
 .lSSlideOuter .lSPager.lSGallery img {
     display: block;
     height: auto;
     max-width: 100%;
+    border-radius: 4px;
 }
 .lSSlideOuter .lSPager.lSGallery:before, .lSSlideOuter .lSPager.lSGallery:after {
     content: " ";
@@ -170,6 +171,7 @@
 }
 .lSAction > a:hover {
     opacity: 1;
+    /* color: var(--baseColor); */
 }
 .lSAction > .lSPrev {
     background-position: 0 0;
