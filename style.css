@@ -18,16 +18,18 @@ font-family: 'Roboto', sans-serif; */
 :root {
     --baseColor: rgb(255, 60, 60);
     --baseYellow: rgb(255, 255, 47);
+    --baseWite: rgb(255, 255, 255);
 }
 
 html {
-    scrollbar-color: red;
+    scrollbar-color: var(--baseColor);
     scroll-behavior: smooth;
 }
 
 body {
     position: relative;
     font-family: 'Poppin', sans-serif;
+    overflow-x: hidden;
 
 }
 
@@ -57,7 +59,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .darkTheme {
-    background-color: rgb(3, 0, 46);
+    background-color: rgb(29, 23, 23);
+    --baseWite:rgb(29, 23, 23);
 }
 
 
@@ -101,8 +104,12 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: 10px;
 }
 
+.darkTheme .promptArea{
+    background-color: var(--baseWite);
+}
+
 .promptHeading {
-    background-color: white;
+    background-color: var(--baseWite);
     height: 12%;
     box-shadow: 0px 0px 4px rgb(187, 187, 187);
     border-radius: 10px;
@@ -111,6 +118,11 @@ body::-webkit-scrollbar-thumb:hover {
     justify-content: center;
     align-items: center;
     font-size: 22px;
+}
+
+.darkTheme .promptHeading{
+    background-color: rgb(211, 55, 55);
+    color: var(--baseWite);
 }
 
 .promptVideo {
@@ -136,13 +148,13 @@ body::-webkit-scrollbar-thumb:hover {
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 4px rgb(187, 187, 187);
-    color: white;
+    color: var(--baseWite);
     transition: all 0.4s;
 }
 
 .closePrompt:hover {
     color: var(--baseColor);
-    background-color: white;
+    background-color: var(--baseWite);
 
 }
 
@@ -270,7 +282,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .topNavItem {
-    color: white;
+    color: var(--baseWite);
 }
 
 /* .topNav p {
@@ -778,8 +790,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 .logoBar .aktuLogo {
     /* flex: 1; */
-    /* border-bottom-left-radius: 10px; */
-    /* border-top-left-radius: 10px; */
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 
@@ -1011,7 +1023,7 @@ body::-webkit-scrollbar-thumb:hover {
     z-index: 10;
     top: 100vh;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50% , -50%);
     background-color: white;
     border-radius: 30px;
     border: 2px solid var(--baseColor);
@@ -1972,18 +1984,30 @@ body::-webkit-scrollbar-thumb:hover {
     display: flex;
 }
 
+.infoItem{
+    width: 24%;
+}
+.infoItem:first-child{
+    width: 48%;
+}
 .infoMap {
-    width: 596pxclascl;
+    /* width: 596pxclascl; */
+    width: 100%;
     height: 400px;
 }
 
 .twitter-timeline {
-    width: 298px;
+    /* width: 298px; */
+    width: 100%;
+    height: 400px;
 }
 
 .infoFb {
-    width: 298px;
+    /* width: 398px; */
+    max-width: 100%;
+    /* width: 100%!important; */
     height: 400px;
+    border-radius: 10px;
 }
 
 .infoItem {

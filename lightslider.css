@@ -175,6 +175,8 @@
 }
 .lSAction > .lSPrev {
     background-position: 0 0;
+    background-image: url('assets/svg/achivement.svg');
+    color: var(--baseColor);
     left: 10px;
 }
 .lSAction > .lSNext {
