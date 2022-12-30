@@ -136,7 +136,7 @@
     transition: border-radius 0.12s linear 0s 0.35s linear 0s;
 }
 .lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {
-    /* border-radius: 2px; */
+    border-radius: 2px;
     border: 2px solid var(--baseColor);
 }
 .lSSlideOuter .lSPager.lSGallery img {
@@ -175,13 +175,15 @@
 }
 .lSAction > .lSPrev {
     background-position: 0 0;
-    background-image: url('assets/svg/achivement.svg');
-    color: var(--baseColor);
+    background-image: url('img/controls.png');
+    color: #fff;
     left: 10px;
 }
 .lSAction > .lSNext {
     background-position: -32px 0;
     right: 10px;
+    background-image: url('img/controls.png');
+    color: #fff;
 }
 .lSAction > a.disabled {
     pointer-events: none;

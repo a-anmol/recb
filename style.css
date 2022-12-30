@@ -19,6 +19,7 @@ font-family: 'Roboto', sans-serif; */
     --baseColor: rgb(255, 60, 60);
     --baseYellow: rgb(255, 255, 47);
     --baseWite: rgb(255, 255, 255);
+    --WhiteLight: rgb(155, 155, 155);
 }
 
 html {
@@ -36,6 +37,8 @@ body {
 body::-webkit-scrollbar {
     background-color: rgb(255, 212, 212);
     width: 14px;
+}body.darkTheme::-webkit-scrollbar{
+    background-color: rgb(97, 70, 70);
 }
 
 body::-webkit-scrollbar-thumb {
@@ -47,7 +50,9 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
     background-color: rgb(255, 188, 188);
 }
-
+body.darkTheme::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(161, 118, 118)
+}
 
 .hide {
     display: none;
@@ -61,6 +66,8 @@ body::-webkit-scrollbar-thumb:hover {
 .darkTheme {
     background-color: rgb(29, 23, 23);
     --baseWite:rgb(29, 23, 23);
+    --baseLight:rgb(46, 32, 32);
+    --baseColor:rgb(255, 89, 89);
 }
 
 
@@ -1036,7 +1043,9 @@ body::-webkit-scrollbar-thumb:hover {
     margin-left: 10px;
     padding-top: 10px;
 }
-
+.darkTheme .introName{
+    background-color: var(--baseWite);
+}
 .nameBar {
     width: 1px;
     height: 100px;
@@ -1154,7 +1163,15 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 
-
+.darkTheme .introName-p.red{
+    color: #803b4e;
+}.darkTheme .introName-p.magenta{
+    color: #ac5483;
+}.darkTheme .introNameImage{
+    border: 2px solid var(--WhiteLight);
+    border-radius: 50%;
+    padding: 2px;
+}
 
 
 
@@ -1232,6 +1249,9 @@ body::-webkit-scrollbar-thumb:hover {
     font-family: 'Poppins';
     text-transform: capitalize;
     text-decoration: none;
+}.darkTheme .buttonBarInfoItem:hover{
+    background-color: var(--baseWite);
+    color: white;
 }
 
 .buttonBarInfoItem:hover {
@@ -1361,6 +1381,12 @@ body::-webkit-scrollbar-thumb:hover {
     margin-bottom: 20px;
     -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.darkTheme .aboutText{
+    background-color: var(--baseLight);
+    /* color: rgb(134, 134, 134); */
+    color: var(--WhiteLight);
 }
 
 .aboutTextButton {
@@ -1525,6 +1551,11 @@ body::-webkit-scrollbar-thumb:hover {
     /* box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15); */
 }
 
+.darkTheme .messageText1{
+    background-color: var(--baseLight);
+    color: var(--WhiteLight);
+}
+
 .messageTextHeading {
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -1550,6 +1581,11 @@ body::-webkit-scrollbar-thumb:hover {
     margin-bottom: 20px;
     -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.darkTheme .messageText2{
+    background-color: var(--baseLight);
+    color: var(--WhiteLight);
 }
 
 @media (max-width: 1450px) {
@@ -1634,6 +1670,11 @@ body::-webkit-scrollbar-thumb:hover {
     display: inline-block;
     margin: auto;
 }
+.darkTheme .noticeOuter{
+    background-color: var(--baseLight);
+    padding: 10px 0;
+    border-radius: 10px;
+}
 
 .noticeInner {
     width: 90%;
@@ -1665,7 +1706,9 @@ body::-webkit-scrollbar-thumb:hover {
     display: inline-block;
     padding-right: 10px;
 }
-
+.darkTheme .noticeTextInner{
+    background-color: var(--baseLight);
+}
 .noticeHeading {
     color: var(--baseColor);
     text-transform: capitalize;
@@ -1684,6 +1727,8 @@ body::-webkit-scrollbar-thumb:hover {
     color: rgb(27, 27, 27);
     font-weight: bold;
     /* font-family: 'Roboto'; */
+}.darkTheme .noticeCaption{
+    color: var(--WhiteLight);
 }
 
 .noticeArea {
@@ -1704,6 +1749,8 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: rgb(255, 234, 234);
     border-radius: 10px;
     height: 14px;
+}.darkTheme .noticeArea::-webkit-scrollbar{
+    background-color: rgb(63, 44, 44);
 }
 
 .noticeArea::-webkit-scrollbar-thumb {
@@ -1714,6 +1761,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 .noticeArea::-webkit-scrollbar-thumb:hover {
     background-color: rgb(255, 238, 238);
+}.darkTheme .noticeArea::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(97, 70, 70);
 }
 
 .noticeItem {
@@ -1730,6 +1779,9 @@ body::-webkit-scrollbar-thumb:hover {
 
 .noticeItem:hover .notice a {
     color: var(--baseColor);
+}.darkTheme .noticeItem:hover
+{
+    background-color: rgb(63, 44, 44);
 }
 
 .noticeItem:hover .noticeDay {
@@ -1752,6 +1804,8 @@ body::-webkit-scrollbar-thumb:hover {
     font-weight: bold;
     position: relative;
     left: -4px;
+}.darkTheme .noticeItem:hover .noticeDay,.darkTheme .notice,.darkTheme .notice a,.darkTheme .noticeMonth{
+    color: var(--WhiteLight);
 }
 
 .noticeMonth {
@@ -1862,6 +1916,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 .MenuBarInfoItemSvg {
     width: 100%;
+}.darkTheme .MenuBarInfoItem{
+    background: linear-gradient(135deg,var(--baseWite) 0%,rgb(80, 66, 66) 50%, rgb(41, 30, 30) 51%, #2c1919 100%);
 }
 
 .MenuBarInfoItemSvg img {
@@ -1891,6 +1947,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 .sometag1 {
     border: 1px solid var(--baseColor);
+}.darkTheme .MenuBarInfoItemText{
+    color: var(--WhiteLight);
 }
 
 .sometag1 .MenuBarInfoItemSvg {
@@ -1964,7 +2022,12 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 
-
+.edSlider{
+    background-color: #f8f8f8;
+}
+.darkTheme .edSlider{
+    background-color: var(--baseLight);
+}
 
 
 
@@ -2034,6 +2097,10 @@ body::-webkit-scrollbar-thumb:hover {
 .faqs {
     width: 40%;
     margin-left: 20px;
+}.darkTheme .faqs{
+    /* margin-right: 10px; */
+    /* margin-left: 10px; */
+    margin: 0 10px 10px 10px;
 }
 
 .questionArea {
@@ -2065,6 +2132,8 @@ body::-webkit-scrollbar-thumb:hover {
     padding: 10px 0;
     font-weight: bold;
     color: rgb(41, 41, 41);
+}.darkTheme .question , .darkTheme .questionAns,.darkTheme .wordMng,.darkTheme .wordUs{
+    color: var(--WhiteLight);
 }
 
 .questionAns {
@@ -2094,7 +2163,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .coglry {
     width: calc(60% - 30px);
-    max-height: 440px;
+    max-height: 490px;
     position: absolute;
     top: 0;
 }
@@ -2104,7 +2173,7 @@ body::-webkit-scrollbar-thumb:hover {
     padding-bottom: auto;
     margin-bottom: auto;
     margin-top: 20px;
-    min-height: 449px;
+    min-height: 490px;
 }
 
 .wordText {
@@ -2304,7 +2373,11 @@ body::-webkit-scrollbar-thumb:hover {
     width: 10px;
     background-color: rgb(255, 188, 188);
 }
-
+#google_translate_element{
+    position: relative;
+    left: 20px;
+    margin-top: 10px;
+}
 .credits {
     /* height: 40px; */
     /* text-align: right; */
@@ -2512,7 +2585,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 
-
+.darkTheme .chatBoxWrapper, .darkTheme .chatBoxWrapper::after{
+    background-color: var(--baseLight);
+}
 
 
 
